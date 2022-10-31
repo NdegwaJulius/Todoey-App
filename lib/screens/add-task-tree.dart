@@ -7,12 +7,12 @@ class AddTaskScreen extends StatelessWidget {
     return Column(
       children:<Widget> [
         Container(
-          color: Color(0XFF757575),
+          color: const Color(0XFF757575),
           child: Column(
             children: [
               Container(
 
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(20.0),
@@ -20,23 +20,23 @@ class AddTaskScreen extends StatelessWidget {
                   )
                 ),
                 child: Padding(
-                  padding:  EdgeInsets.all(60.0),
+                  padding:  const EdgeInsets.all(60.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
-                      Text('Add Task',
+                      const Text('Add Task',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontSize: 20,fontWeight:FontWeight.bold),),
                       TextFormField(
                         autofocus: true,
                         textAlign: TextAlign.center,
-                        style: TextStyle(height: 2),
+                        style: const TextStyle(height: 2),
                       ),
-                      SizedBox(height: 20,),
+                      const SizedBox(height: 20,),
                       ElevatedButton(
 
                           onPressed: (){},
-                          child: Text('Add',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)))
+                          child: const Text('Add',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)))
                     ],
                   ),
                 ),
